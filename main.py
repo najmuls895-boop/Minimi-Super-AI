@@ -124,7 +124,7 @@ if user_input := st.chat_input("Puchiye ya Bolkar likhein..."):
                     
                     # Speak response
                     clean_res = response.replace("'", "").replace("\n", " ")
-                    st.components.v1.html(f"<script>window.parent.speakText('{clean_res}', '{lang}');</script>", height=0)
+                    st.components.v1.html(f"<script>window.parent.speakText('{clean_res}', '{lang}');</script>", height=0) 
                     
                     st.session_state.messages.append({"role": "assistant", "content": response})
                 except Exception as e:
