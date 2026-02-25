@@ -128,4 +128,4 @@ if user_input := st.chat_input("Puchiye ya Bolkar likhein..."):
                     
                     st.session_state.messages.append({"role": "assistant", "content": response})
                 except Exception as e:
-                    st.error("Service busy hai, please thodi der baad try karein.")
+                    st.error("Service busy hai, please thodi der baad try karein.") 
